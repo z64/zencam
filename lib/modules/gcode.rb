@@ -15,6 +15,11 @@ module ZenCam
       # @return [Anything] the data attached to the Word
       attr_accessor :data
 
+      def initialize(address, data)
+        @address = address
+        @data    = data
+      end
+
       # Renders a Word to a string.
       # @return [String]
       def to_s
