@@ -1,0 +1,3 @@
+# ZenCam
+module ZenCam
+end

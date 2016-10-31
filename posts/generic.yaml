@@ -1,0 +1,34 @@
+---
+address:
+  prep     : G
+  function : M
+  sequence : N
+  feed     : F
+  a        : A
+  b        : B
+  tool     : T
+  x        : X
+  y        : Y
+  z        : Z
+
+comment:
+  left: (
+  right: )
+
+gcodes:
+  rapid       : 0
+  linear      : 1
+  absolute    : 90
+  incremental : 91
+
+mcodes:
+  full_stop      : 0
+  optional_stop  : 1
+  spindle_cw     : 3
+  spindle_ccw    : 4
+  spindle_stop   : 5
+  tool_change    : 6
+  coolant_on     : 8
+  coolant_off    : 9
+  indexer        : 11
+  spindle_orient : 19
