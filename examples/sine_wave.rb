@@ -8,7 +8,7 @@ POST = ZenCam::Post.new(YAML.load_file('../posts/generic.yaml'))
 program = []
 
 # Program header comment
-program << POST.block(1, nil, nil, comment: 'sine wave example')
+program << POST.block(1, comment: 'sine wave example')
 
 # A simple sine-wave stepper class
 class Wave
@@ -32,7 +32,6 @@ steps.times do |t|
   program << POST.block(
     t + 2,
     :linear,
-    nil,
     words: {
       x: wave.position.round(4),
       y: Math.sin(wave.position).round(4),
