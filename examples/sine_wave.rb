@@ -42,5 +42,8 @@ steps.times do |t|
   wave.walk!
 end
 
+# Output a full stop
+program << POST.block(999, nil, :full_stop, comment: 'end of program')
+
 # Output the program
 puts program
